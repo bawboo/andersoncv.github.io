@@ -32,7 +32,6 @@
       padding: 30px;
       margin-bottom: 30px;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-      opacity: 0;
     }
     h2 {
       margin-bottom: 20px;
@@ -58,7 +57,7 @@
     <h1 class="animate__animated animate__fadeInDown">Anderson Huang's Resume</h1>
 
     <!-- Section: Education -->
-    <div class="section animate__animated">
+    <div class="section animate__animated animate__fadeInUp">
       <h2>Education</h2>
       <p>National Taiwan University CSIE Master Degree (2020~)</p>
       <p>THU Finance Bachelor Degree (2015~2019)</p>
@@ -66,7 +65,7 @@
     </div>
 
     <!-- Section: Skills -->
-    <div class="section animate__animated">
+    <div class="section animate__animated animate__fadeInUp">
       <h2>Skills</h2>
       <p>TensorFlow in any version</p>
       <p>Pytorch, Numpy, Pandas, Python</p>
@@ -74,7 +73,7 @@
     </div>
 
     <!-- Section: Practical Experience -->
-    <div class="section animate__animated">
+    <div class="section animate__animated animate__fadeInUp">
       <h2>Practical Experience</h2>
       <p>Internship at Positive Grid: Dealt with guitar amp solutions, including VA modeling, music source separation modeling, and chord detection modeling.</p>
       <p>Internship at Aurismart: Worked on products for hearing-damaged people.</p>
@@ -82,14 +81,14 @@
     </div>
 
     <!-- Section: Competitions -->
-    <div class="section animate__animated">
+    <div class="section animate__animated animate__fadeInUp">
       <h2>Competitions</h2>
       <p>E.SUN AI Open Competition Winter 2021 - Credit Card Transaction (6th out of 859 participants)</p>
       <p>Artificial Intelligence School Final Competition (3rd place)</p>
     </div>
 
     <!-- Section: Contact -->
-    <div class="section animate__animated">
+    <div class="section animate__animated animate__fadeInUp">
       <h2>Contact</h2>
       <p>Email: <a href="mailto:r09922126@csie.ntu.edu.tw">r09922126@csie.ntu.edu.tw</a></p>
     </div>
@@ -98,12 +97,14 @@
   <!-- ScrollReveal.js for scroll animations -->
   <script src="https://unpkg.com/scrollreveal"></script>
   <script>
+    // 加載後立即顯示內容
     ScrollReveal().reveal('.section', { 
       duration: 1000,
       delay: 200,
       distance: '50px',
       easing: 'ease-in-out',
-      origin: 'bottom'
+      origin: 'bottom',
+      reset: true // 確保滾動回來時重新觸發動畫
     });
   </script>
 </body>
