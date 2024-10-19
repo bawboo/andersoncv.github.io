@@ -1,76 +1,110 @@
 <!DOCTYPE html>
-<html lang="zh-TW">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>黃宇瑍的履歷</title>
-  <!-- 引入 Animate.css 動畫庫 -->
+  <title>Anderson Huang's Resume</title>
+  <!-- Animate.css for animations -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background-color: #f4f4f9;
+      font-family: 'Roboto', sans-serif;
+      background-color: #f0f4f8;
       color: #333;
-      padding: 20px;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 50px 0;
     }
     h1, h2 {
       text-align: center;
+      margin: 20px 0;
     }
     .section {
-      margin-bottom: 50px;
-      padding: 20px;
       background-color: #fff;
       border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 30px;
+      margin-bottom: 30px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      opacity: 0;
     }
-    .section h2 {
+    h2 {
       margin-bottom: 20px;
+      font-size: 1.5em;
+      color: #007BFF;
     }
-    .section p {
+    p {
+      margin: 10px 0;
       line-height: 1.6;
     }
-    .fadeInUp {
-      animation: fadeInUp 2s ease-out;
+    a {
+      color: #007BFF;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
-  <h1 class="animate__animated animate__fadeInDown">黃宇瑍的履歷</h1>
-  
-  <div class="section animate__animated animate__fadeInUp">
-    <h2>教育背景</h2>
-    <p>國立台灣大學 電機資訊學院 碩士 (2020~)</p>
-    <p>東海大學 財務金融學士 (2015~2019)</p>
-    <p>台灣人工智慧學院 畢業前三名</p>
+
+  <div class="container">
+    <h1 class="animate__animated animate__fadeInDown">Anderson Huang's Resume</h1>
+
+    <!-- Section: Education -->
+    <div class="section animate__animated">
+      <h2>Education</h2>
+      <p>National Taiwan University CSIE Master Degree (2020~)</p>
+      <p>THU Finance Bachelor Degree (2015~2019)</p>
+      <p>Artificial Intelligence Academy in Taiwan, Third place to graduate</p>
+    </div>
+
+    <!-- Section: Skills -->
+    <div class="section animate__animated">
+      <h2>Skills</h2>
+      <p>TensorFlow in any version</p>
+      <p>Pytorch, Numpy, Pandas, Python</p>
+      <p>Docker</p>
+    </div>
+
+    <!-- Section: Practical Experience -->
+    <div class="section animate__animated">
+      <h2>Practical Experience</h2>
+      <p>Internship at Positive Grid: Dealt with guitar amp solutions, including VA modeling, music source separation modeling, and chord detection modeling.</p>
+      <p>Internship at Aurismart: Worked on products for hearing-damaged people.</p>
+      <p>Internship at ProfetAI: Worked on AutoML solutions.</p>
+    </div>
+
+    <!-- Section: Competitions -->
+    <div class="section animate__animated">
+      <h2>Competitions</h2>
+      <p>E.SUN AI Open Competition Winter 2021 - Credit Card Transaction (6th out of 859 participants)</p>
+      <p>Artificial Intelligence School Final Competition (3rd place)</p>
+    </div>
+
+    <!-- Section: Contact -->
+    <div class="section animate__animated">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:r09922126@csie.ntu.edu.tw">r09922126@csie.ntu.edu.tw</a></p>
+    </div>
   </div>
 
-  <div class="section animate__animated animate__fadeInUp">
-    <h2>技能</h2>
-    <p>熟悉的工具和技術包括 TensorFlow, PyTorch, numpy, pandas, Docker</p>
-  </div>
-
-  <div class="section animate__animated animate__fadeInUp">
-    <h2>實習經歷</h2>
-    <p>Positive Grid: 處理電子吉他音箱解決方案，開發基於深度學習的音樂模型。</p>
-    <p>Aurismart: 開發專為聽障人群設計的產品。</p>
-    <p>ProfetAI: 負責自動機器學習（AutoML）解決方案的實施。</p>
-  </div>
-
-  <div class="section animate__animated animate__fadeInUp">
-    <h2>競賽經歷</h2>
-    <p>台灣 E.SUN AI Open Competition 冬季 2021 - 信用卡消費預測：第6名（共859人參賽）</p>
-    <p>人工智慧學校最終競賽：第3名</p>
-  </div>
-
-  <div class="section animate__animated animate__fadeInUp">
-    <h2>聯絡方式</h2>
-    <p>Email: <a href="mailto:r09922126@csie.ntu.edu.tw">r09922126@csie.ntu.edu.tw</a></p>
-  </div>
-
-  <!-- ScrollReveal 效果 -->
+  <!-- ScrollReveal.js for scroll animations -->
   <script src="https://unpkg.com/scrollreveal"></script>
   <script>
-    ScrollReveal().reveal('.section', { delay: 200, distance: '50px', origin: 'bottom' });
+    ScrollReveal().reveal('.section', { 
+      duration: 1000,
+      delay: 200,
+      distance: '50px',
+      easing: 'ease-in-out',
+      origin: 'bottom'
+    });
   </script>
 </body>
 </html>
